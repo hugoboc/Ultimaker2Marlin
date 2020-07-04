@@ -174,15 +174,15 @@
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
 #ifndef HEATER_0_MAXTEMP
-    #define HEATER_0_MAXTEMP 275
+    #define HEATER_0_MAXTEMP 240
 #endif
 #ifndef HEATER_1_MAXTEMP
-    #define HEATER_1_MAXTEMP 275
+    #define HEATER_1_MAXTEMP 240
 #endif
 #ifndef HEATER_2_MAXTEMP
-    #define HEATER_2_MAXTEMP 275
+    #define HEATER_2_MAXTEMP 240
 #endif
-#define BED_MAXTEMP 200
+#define BED_MAXTEMP 100
 
 //Check if the heater heats up MAX_HEATING_TEMPERATURE_INCREASE within MAX_HEATING_CHECK_MILLIS while the PID was at the maximum.
 // If not, raise an error because most likely the heater is not heating up the temperature sensor. Indicating an issue in the system.
@@ -225,9 +225,9 @@
     #define  DEFAULT_Kd 70.0
 #else
 // Ultimaker2
-    #define  DEFAULT_Kp 10.0
-    #define  DEFAULT_Ki 2.5
-    #define  DEFAULT_Kd 100.0
+    #define  DEFAULT_Kp 19.12
+    #define  DEFAULT_Ki 1.72
+    #define  DEFAULT_Kd 53.18
 #endif // UM2PLUS
 
 // Makergear
