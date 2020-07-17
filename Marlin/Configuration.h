@@ -174,15 +174,15 @@
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
 #ifndef HEATER_0_MAXTEMP
-    #define HEATER_0_MAXTEMP 240
+    #define HEATER_0_MAXTEMP 275
 #endif
 #ifndef HEATER_1_MAXTEMP
-    #define HEATER_1_MAXTEMP 240
+    #define HEATER_1_MAXTEMP 275
 #endif
 #ifndef HEATER_2_MAXTEMP
-    #define HEATER_2_MAXTEMP 240
+    #define HEATER_2_MAXTEMP 275
 #endif
-#define BED_MAXTEMP 100
+#define BED_MAXTEMP 200
 
 //Check if the heater heats up MAX_HEATING_TEMPERATURE_INCREASE within MAX_HEATING_CHECK_MILLIS while the PID was at the maximum.
 // If not, raise an error because most likely the heater is not heating up the temperature sensor. Indicating an issue in the system.
